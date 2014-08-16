@@ -3,8 +3,22 @@ body
 {
 	font-size:16px;
 }
-section
+table, th, td 
 {
-border:1px solid red;
-display: inline-block;
+	border:1px solid black;
+}
+
+.reglas
+{
+	/*border: 1px solid red;*/
+	display:inline-block;
+	width: 250px;
+}
+
+.resultado
+{
+	display:inline-block;
+	border: 1px solid black;
+	vertical-align:top;
+	width:250px;
 }

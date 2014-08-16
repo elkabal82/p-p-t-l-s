@@ -18,6 +18,7 @@ function aleatorio(minimo, maximo)
 }
 
 //guardamos en opcionUsuario la opcion que el usuario selecciono
+//despues de \n no puede haber espacio en blanco
 opcionUsuario = prompt("¿Que eliges?\nPiedra: 0\nPapel: 1\nTijeras: 2\nLagarto: 3\nSpock: 4", 0);
 
 //Con alert mostramos unos mensajes, que escogiste y lo que escogio la maquina
