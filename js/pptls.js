@@ -21,8 +21,8 @@ function aleatorio(minimo, maximo)
 opcionUsuario = prompt("¿Que eliges?\nPiedra: 0\nPapel: 1\nTijeras: 2\nLagarto: 3\nSpock: 4", 0);
 
 //Con alert mostramos unos mensajes, que escogiste y lo que escogio la maquina
-alert("Escogiste " + opciones[opcionUsuario]);
-alert("JavaScript escogio " + opciones[opcionMaquina]);
+document.write("Escogiste " + opciones[opcionUsuario] + "<br>");
+document.write("JavaScript escogio " + opciones[opcionMaquina] + "<br>");
 
 
 
@@ -30,23 +30,23 @@ if (opcionUsuario == tijeras)
 {
 	if (opcionMaquina == tijeras)
 	{
-		alert("Empate");
+		document.write("Empate");
 	}
 	else if (opcionMaquina == papel)
 	{
-		alert("Ganaste");
+		document.write("Ganaste");
 	}
 	else if (opcionMaquina == lagarto)
 	{
-		alert("Ganaste");
+		document.write("Ganaste");
 	}
 	else if (opcionMaquina == spock)
 	{
-		alert("Perdiste");
+		document.write("Perdiste");
 	}
 	else if (opcionMaquina == piedra)
 	{
-		alert("Perdiste");
+		document.write("Perdiste");
 	}
 }
 
