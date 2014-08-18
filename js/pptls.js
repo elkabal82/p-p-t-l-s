@@ -55,23 +55,23 @@ else if (opcionUsuario == papel)
 {
 	if (opcionMaquina == papel)
 	{
-		alert("Empate");
+		document.write("Empate");
 	}
 	else if (opcionMaquina == piedra)
 	{
-		alert("Ganaste");
+		document.write("Ganaste");
 	}
 	else if (opcionMaquina == spock)
 	{
-		alert("Ganaste");
+		document.write("Ganaste");
 	}
 	else if (opcionMaquina == tijeras)
 	{
-		alert("Perdiste");
+		document.write("Perdiste");
 	}
 	else if (opcionMaquina == lagarto)
 	{
-		alert("Perdiste");
+		document.write("Perdiste");
 	}
 }
 
@@ -79,23 +79,23 @@ else if (opcionUsuario == piedra)
 {
 	if (opcionMaquina == piedra)
 	{
-		alert("Empate");
+		document.write("Empate");
 	}
 	else if (opcionMaquina == tijeras)
 	{
-		alert("Ganaste");
+		document.write("Ganaste");
 	}
 	else if (opcionMaquina == lagarto)
 	{
-		alert("Ganaste");
+		document.write("Ganaste");
 	}
 	else if (opcionMaquina == spock)
 	{
-		alert("Perdiste");
+		document.write("Perdiste");
 	}
 	else if (opcionMaquina == papel)
 	{
-		alert("Perdiste");
+		document.write("Perdiste");
 	}
 }
 
@@ -103,23 +103,23 @@ else if (opcionUsuario == spock)
 {
 	if (opcionMaquina == spock)
 	{
-		alert("Empate");
+		document.write("Empate");
 	}
 	else if (opcionMaquina == piedra)
 	{
-		alert("Ganaste");
+		document.write("Ganaste");
 	}
 	else if (opcionMaquina == tijeras)
 	{
-		alert("Ganaste");
+		document.write("Ganaste");
 	}
 	else if (opcionMaquina == papel)
 	{
-		alert("Perdiste");
+		document.write("Perdiste");
 	}
 	else if (opcionMaquina == lagarto)
 	{
-		alert("Perdiste");
+		document.write("Perdiste");
 	}
 
 }
@@ -128,27 +128,27 @@ else if (opcionUsuario == lagarto)
 {
 	if (opcionMaquina == lagarto)
 	{
-		alert("Empate");
+		document.write("Empate");
 	}
 	else if (opcionMaquina == papel)
 	{
-		alert("Ganaste");
+		document.write("Ganaste");
 	}
 	else if (opcionMaquina == spock)
 	{
-		alert("Ganaste");
+		document.write("Ganaste");
 	}
 	else if (opcionMaquina == tijeras)
 	{
-		alert("Perdiste");
+		document.write("Perdiste");
 	}
 	else if (opcionMaquina == piedra)
 	{
-		alert("Perdiste");
+		document.write("Perdiste");
 	}
 }
 
 else
 {
-	alert("Esa opcion no existe");
+	document.write("Esa opcion no existe");
 }	
