@@ -32,26 +32,18 @@ htmlOpcionMaquina.innerHTML += opciones[opcionMaquina];
 
 //opcionUsuario = document.getElementById("opcionUsuario");
 //opcionUsuario.innerHTML = opciones[opcionUsuario]; 
-if (opcionUsuario == tijeras)
+if (opcionUsuario == tijeras )
 {
 	if (opcionMaquina == tijeras)
 	{
 		htmlResultado.innerHTML = ("Empate");
 		//document.write("Empate");
 	}
-	else if (opcionMaquina == papel)
+	else if (opcionMaquina == papel || opcionMaquina == lagarto)
 	{
 		htmlResultado.innerHTML = ("Ganaste");
 	}
-	else if (opcionMaquina == lagarto)
-	{
-		htmlResultado.innerHTML = ("Ganaste");
-	}
-	else if (opcionMaquina == spock)
-	{
-		htmlResultado.innerHTML = ("Perdiste");
-	}
-	else if (opcionMaquina == piedra)
+	else if (opcionMaquina == spock || opcionMaquina == piedra)
 	{
 		htmlResultado.innerHTML = ("Perdiste");
 	}
@@ -63,19 +55,11 @@ else if (opcionUsuario == papel)
 	{
 		htmlResultado.innerHTML = ("Empate");
 	}
-	else if (opcionMaquina == piedra)
+	else if (opcionMaquina == piedra || opcionMaquina == spock)
 	{
 		htmlResultado.innerHTML = ("Ganaste");
 	}
-	else if (opcionMaquina == spock)
-	{
-		htmlResultado.innerHTML = ("Ganaste");
-	}
-	else if (opcionMaquina == tijeras)
-	{
-		htmlResultado.innerHTML = ("Perdiste");
-	}
-	else if (opcionMaquina == lagarto)
+	else if (opcionMaquina == tijeras || opcionMaquina == lagarto)
 	{
 		htmlResultado.innerHTML = ("Perdiste");
 	}
@@ -87,19 +71,11 @@ else if (opcionUsuario == piedra)
 	{
 		htmlResultado.innerHTML = ("Empate");
 	}
-	else if (opcionMaquina == tijeras)
+	else if (opcionMaquina == tijeras || opcionMaquina == lagarto)
 	{
 		htmlResultado.innerHTML = ("Ganaste");
 	}
-	else if (opcionMaquina == lagarto)
-	{
-		htmlResultado.innerHTML = ("Ganaste");
-	}
-	else if (opcionMaquina == spock)
-	{
-		htmlResultado.innerHTML = ("Perdiste");
-	}
-	else if (opcionMaquina == papel)
+	else if (opcionMaquina == spock || opcionMaquina == papel)
 	{
 		htmlResultado.innerHTML = ("Perdiste");
 	}
@@ -111,23 +87,14 @@ else if (opcionUsuario == spock)
 	{
 		htmlResultado.innerHTML =("Empate");
 	}
-	else if (opcionMaquina == piedra)
+	else if (opcionMaquina == piedra || opcionMaquina == tijeras)
 	{
 		htmlResultado.innerHTML = ("Ganaste");
 	}
-	else if (opcionMaquina == tijeras)
-	{
-		htmlResultado.innerHTML = ("Ganaste");
-	}
-	else if (opcionMaquina == papel)
+	else if (opcionMaquina == papel || opcionMaquina == lagarto)
 	{
 		htmlResultado.innerHTML = ("Perdiste");
 	}
-	else if (opcionMaquina == lagarto)
-	{
-		htmlResultado.innerHTML = ("Perdiste");
-	}
-
 }
 
 else if (opcionUsuario == lagarto)
@@ -136,19 +103,11 @@ else if (opcionUsuario == lagarto)
 	{
 		htmlResultado.innerHTML = ("Empate");
 	}
-	else if (opcionMaquina == papel)
+	else if (opcionMaquina == papel || opcionMaquina == spock)
 	{
 		htmlResultado.innerHTML = ("Ganaste");
 	}
-	else if (opcionMaquina == spock)
-	{
-		htmlResultado.innerHTML = ("Ganaste");
-	}
-	else if (opcionMaquina == tijeras)
-	{
-		htmlResultado.innerHTML = ("Perdiste");
-	}
-	else if (opcionMaquina == piedra)
+	else if (opcionMaquina == tijeras || opcionMaquina == piedra)
 	{
 		htmlResultado.innerHTML = ("Perdiste");
 	}
