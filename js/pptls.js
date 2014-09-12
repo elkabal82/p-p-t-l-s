@@ -10,6 +10,9 @@ var opciones =["PIEDRA", "PAPEL", "TIJERAS", "LAGARTO", "SPOCK"];
 var opcionUsuario;
 var opcionMaquina = aleatorio(0,4);
 
+var htmlOpcionUsuario = document.getElementById("opcionUsuario");
+var htmlOpcionMaquina = document.getElementById("opcionMaquina");
+var htmlResultado = document.getElementById("resultado");
 //Declaramos la funcion aleatorio 
 function aleatorio(minimo, maximo)
 {
@@ -22,32 +25,35 @@ function aleatorio(minimo, maximo)
 opcionUsuario = prompt("¿Que eliges?\nPiedra: 0\nPapel: 1\nTijeras: 2\nLagarto: 3\nSpock: 4", 0);
 
 //Con alert mostramos unos mensajes, que escogiste y lo que escogio la maquina
-document.write("Escogiste " + opciones[opcionUsuario] + "<br>");
-document.write("JavaScript escogio " + opciones[opcionMaquina] + "<br>");
+//document.write("Escogiste " + opciones[opcionUsuario] + "<br>");
+htmlOpcionUsuario.innerHTML += opciones[opcionUsuario];
+htmlOpcionMaquina.innerHTML += opciones[opcionMaquina];
+//document.write("JavaScript escogio " + opciones[opcionMaquina] + "<br>");
 
-
-
+//opcionUsuario = document.getElementById("opcionUsuario");
+//opcionUsuario.innerHTML = opciones[opcionUsuario]; 
 if (opcionUsuario == tijeras)
 {
 	if (opcionMaquina == tijeras)
 	{
-		document.write("Empate");
+		htmlResultado.innerHTML = ("Empate");
+		//document.write("Empate");
 	}
 	else if (opcionMaquina == papel)
 	{
-		document.write("Ganaste");
+		htmlResultado.innerHTML = ("Ganaste");
 	}
 	else if (opcionMaquina == lagarto)
 	{
-		document.write("Ganaste");
+		htmlResultado.innerHTML = ("Ganaste");
 	}
 	else if (opcionMaquina == spock)
 	{
-		document.write("Perdiste");
+		htmlResultado.innerHTML = ("Perdiste");
 	}
 	else if (opcionMaquina == piedra)
 	{
-		document.write("Perdiste");
+		htmlResultado.innerHTML = ("Perdiste");
 	}
 }
 
@@ -55,23 +61,23 @@ else if (opcionUsuario == papel)
 {
 	if (opcionMaquina == papel)
 	{
-		document.write("Empate");
+		htmlResultado.innerHTML = ("Empate");
 	}
 	else if (opcionMaquina == piedra)
 	{
-		document.write("Ganaste");
+		htmlResultado.innerHTML = ("Ganaste");
 	}
 	else if (opcionMaquina == spock)
 	{
-		document.write("Ganaste");
+		htmlResultado.innerHTML = ("Ganaste");
 	}
 	else if (opcionMaquina == tijeras)
 	{
-		document.write("Perdiste");
+		htmlResultado.innerHTML = ("Perdiste");
 	}
 	else if (opcionMaquina == lagarto)
 	{
-		document.write("Perdiste");
+		htmlResultado.innerHTML = ("Perdiste");
 	}
 }
 
@@ -79,23 +85,23 @@ else if (opcionUsuario == piedra)
 {
 	if (opcionMaquina == piedra)
 	{
-		document.write("Empate");
+		htmlResultado.innerHTML = ("Empate");
 	}
 	else if (opcionMaquina == tijeras)
 	{
-		document.write("Ganaste");
+		htmlResultado.innerHTML = ("Ganaste");
 	}
 	else if (opcionMaquina == lagarto)
 	{
-		document.write("Ganaste");
+		htmlResultado.innerHTML = ("Ganaste");
 	}
 	else if (opcionMaquina == spock)
 	{
-		document.write("Perdiste");
+		htmlResultado.innerHTML = ("Perdiste");
 	}
 	else if (opcionMaquina == papel)
 	{
-		document.write("Perdiste");
+		htmlResultado.innerHTML = ("Perdiste");
 	}
 }
 
@@ -103,23 +109,23 @@ else if (opcionUsuario == spock)
 {
 	if (opcionMaquina == spock)
 	{
-		document.write("Empate");
+		htmlResultado.innerHTML =("Empate");
 	}
 	else if (opcionMaquina == piedra)
 	{
-		document.write("Ganaste");
+		htmlResultado.innerHTML = ("Ganaste");
 	}
 	else if (opcionMaquina == tijeras)
 	{
-		document.write("Ganaste");
+		htmlResultado.innerHTML = ("Ganaste");
 	}
 	else if (opcionMaquina == papel)
 	{
-		document.write("Perdiste");
+		htmlResultado.innerHTML = ("Perdiste");
 	}
 	else if (opcionMaquina == lagarto)
 	{
-		document.write("Perdiste");
+		htmlResultado.innerHTML = ("Perdiste");
 	}
 
 }
@@ -128,27 +134,27 @@ else if (opcionUsuario == lagarto)
 {
 	if (opcionMaquina == lagarto)
 	{
-		document.write("Empate");
+		htmlResultado.innerHTML = ("Empate");
 	}
 	else if (opcionMaquina == papel)
 	{
-		document.write("Ganaste");
+		htmlResultado.innerHTML = ("Ganaste");
 	}
 	else if (opcionMaquina == spock)
 	{
-		document.write("Ganaste");
+		htmlResultado.innerHTML = ("Ganaste");
 	}
 	else if (opcionMaquina == tijeras)
 	{
-		document.write("Perdiste");
+		htmlResultado.innerHTML = ("Perdiste");
 	}
 	else if (opcionMaquina == piedra)
 	{
-		document.write("Perdiste");
+		htmlResultado.innerHTML = ("Perdiste");
 	}
 }
 
 else
 {
-	document.write("Esa opcion no existe");
+	htmlResultado.innerHTML = ("Esa opcion no existe");
 }	
