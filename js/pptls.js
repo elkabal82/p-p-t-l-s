@@ -10,9 +10,6 @@ var opciones =["PIEDRA", "PAPEL", "TIJERAS", "LAGARTO", "SPOCK"];
 var opcionUsuario;
 var opcionMaquina = aleatorio(0,4);
 
-var htmlOpcionUsuario = document.getElementById("opcionUsuario");
-var htmlOpcionMaquina = document.getElementById("opcionMaquina");
-var htmlResultado = document.getElementById("resultado");
 //Declaramos la funcion aleatorio 
 function aleatorio(minimo, maximo)
 {
@@ -26,12 +23,21 @@ opcionUsuario = prompt("¿Que eliges?\nPiedra: 0\nPapel: 1\nTijeras: 2\nLagarto:
 
 //Con alert mostramos unos mensajes, que escogiste y lo que escogio la maquina
 //document.write("Escogiste " + opciones[opcionUsuario] + "<br>");
-htmlOpcionUsuario.innerHTML += opciones[opcionUsuario];
-htmlOpcionMaquina.innerHTML += opciones[opcionMaquina];
+function inicio()
+{
+	var htmlOpcionUsuario = document.getElementById("opcionUsuario");
+	var htmlOpcionMaquina = document.getElementById("opcionMaquina");
+	var htmlResultado = document.getElementById("resultado");	
+	
+	htmlOpcionUsuario.innerHTML += opciones[opcionUsuario];
+	htmlOpcionMaquina.innerHTML += opciones[opcionMaquina];
+
+
 //document.write("JavaScript escogio " + opciones[opcionMaquina] + "<br>");
 
 //opcionUsuario = document.getElementById("opcionUsuario");
 //opcionUsuario.innerHTML = opciones[opcionUsuario]; 
+
 if (opcionUsuario == tijeras )
 {
 	if (opcionMaquina == tijeras)
@@ -117,3 +123,4 @@ else
 {
 	htmlResultado.innerHTML = ("Esa opcion no existe");
 }	
+}
