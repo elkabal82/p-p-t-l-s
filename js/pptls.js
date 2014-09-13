@@ -25,9 +25,9 @@ opcionUsuario = prompt("¿Que eliges?\nPiedra: 0\nPapel: 1\nTijeras: 2\nLagarto:
 //document.write("Escogiste " + opciones[opcionUsuario] + "<br>");
 function inicio()
 {
-	var htmlOpcionUsuario = document.getElementById("opcionUsuario");
-	var htmlOpcionMaquina = document.getElementById("opcionMaquina");
-	var htmlResultado = document.getElementById("resultado");	
+	//var htmlOpcionUsuario = document.getElementById("opcionUsuario");
+	//var htmlOpcionMaquina = document.getElementById("opcionMaquina");
+	//var htmlResultado = document.getElementById("resultado");	
 	
 	htmlOpcionUsuario.innerHTML += opciones[opcionUsuario];
 	htmlOpcionMaquina.innerHTML += opciones[opcionMaquina];
